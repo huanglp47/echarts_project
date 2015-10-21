@@ -63,7 +63,6 @@ gulp.task('imagemin', function(){
         .pipe(rev.manifest())
         .pipe(gulp.dest('rev/images'));
 });
-
 gulp.task('rev', ['compressJs', 'compressCss', 'imagemin'],  function(){
    return gulp.src(['rev/**/*.json', 'index_dist.html'])
        .pipe( revCollector({
