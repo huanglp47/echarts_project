@@ -76,7 +76,6 @@ var myDatePicker = function() {
     // new MDatepicker(options);
 
     function MDatepicker(options) {
-        this.target = options.targetClass;
         this.input = options.input || $('input');
         this.slectContainer = 'J_dp_container';
 
@@ -107,7 +106,6 @@ var myDatePicker = function() {
                     });
                     $('.' + this.slectContainer).hide();
                     $('#datePickerPanel').hide();
-                    $('.J_dp_container').hide();
                     that.ajaxCallBack && that.ajaxCallBack(); //ajax回调请求data
                 }
                 return false;
@@ -272,7 +270,6 @@ var myDatePicker = function() {
                 $('#datePickerPanel').show();
                 new MDatepicker({
                     'input': $input,
-                    'targetClass': 'datePickPlaceholder',
                     'ajaxCallBack': that.ajaxCallBack
                 });
             });
