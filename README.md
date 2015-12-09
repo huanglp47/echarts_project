@@ -9,7 +9,7 @@
 
 demo中的日期选择框：
 说明：  
-$.datepicker.regional['zh-CN']为汉化函数；  
+$.datepicker.regional['zh-CN']为汉化函数。界面样式定制化；  
 调用：
     input:必要, ajaxCallBack: 必要, congifArr：可选， callback: 可选
     不需要自定义时：congifArr为[]或者不配置, callback必选（触发）
